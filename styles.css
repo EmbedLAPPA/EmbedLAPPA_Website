@@ -277,7 +277,13 @@ main {
 }
 
 .contact-form--stacked {
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form--stacked label,
+.contact-form--stacked button {
+  width: 100%;
 }
 
 .form-legend {
