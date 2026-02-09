@@ -94,6 +94,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -257,12 +259,21 @@ main {
   border-radius: 18px;
   padding: 32px;
   border: 1px solid var(--line);
+  align-items: center;
+}
+
+.contact .section-title,
+.contact .form-legend,
+.contact-form {
+  width: 100%;
+  max-width: 720px;
 }
 
 .contact-form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
+  margin: 0 auto;
 }
 
 .contact-form--stacked {
