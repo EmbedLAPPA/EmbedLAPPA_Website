@@ -300,6 +300,18 @@ main {
   font-size: 0.85rem;
 }
 
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.thanks {
+  text-align: center;
+}
+
 .footer {
   padding: 28px 6vw 40px;
   display: flex;

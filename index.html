@@ -133,24 +133,65 @@
           <h2>Let’s build your next embedded release</h2>
           <p>Tell us about your timeline and constraints. We reply within 48 hours.</p>
         </div>
-        <form class="contact-form" onsubmit="return false;">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xojnvwlr"
+          method="POST"
+        >
           <label>
             Name
-            <input type="text" placeholder="Your name" />
+            <input type="text" name="name" placeholder="Your name" required />
           </label>
           <label>
             Email
-            <input type="email" placeholder="you@company.com" />
+            <input
+              type="email"
+              name="email"
+              placeholder="you@company.com"
+              required
+            />
           </label>
           <label>
             Project notes
-            <textarea rows="4" placeholder="What are you building?"></textarea>
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="What are you building?"
+              required
+            ></textarea>
           </label>
-          <button type="button">Send inquiry</button>
+          <label class="honeypot" aria-hidden="true">
+            Leave this empty
+            <input
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </label>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://embedlappa.github.io/EmbedLAPPA_Website/#thanks"
+          />
+          <input
+            type="hidden"
+            name="_subject"
+            value="EmbedLAPPA inquiry"
+          />
+          <button type="submit">Send inquiry</button>
           <p class="form-note">
-            Placeholder form. Add your email handler or CRM integration.
+            This form sends to Formspree. Replace the action URL with your
+            Formspree form ID.
           </p>
         </form>
+      </section>
+
+      <section id="thanks" class="section thanks">
+        <div class="section-title">
+          <h2>Thanks for reaching out</h2>
+          <p>We received your inquiry and will reply within 48 hours.</p>
+        </div>
       </section>
     </main>
 
