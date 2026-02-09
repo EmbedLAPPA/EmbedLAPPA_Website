@@ -24,6 +24,7 @@ if ("IntersectionObserver" in window) {
 
 const contactForm = document.getElementById("contact-form");
 const formNote = document.getElementById("form-note");
+const thanksOverlay = document.getElementById("thanks-overlay");
 
 if (contactForm) {
   contactForm.addEventListener("submit", async (event) => {
@@ -53,10 +54,17 @@ if (contactForm) {
         formNote.textContent = "Thanks! We received your inquiry.";
       }
 
-      const thanksSection = document.getElementById("thanks");
-      if (thanksSection) {
-        thanksSection.scrollIntoView({ behavior: "smooth" });
+      if (thanksOverlay) {
+        document.body.dataset.thanks = "true";
+        thanksOverlay.setAttribute("aria-hidden", "false");
       }
+
+      const redirectTarget =
+        contactForm.dataset.redirect || "https://embedlappa.github.io/EmbedLAPPA_Website/";
+
+      setTimeout(() => {
+        window.location.href = redirectTarget;
+      }, 5000);
     } catch (error) {
       if (formNote) {
         formNote.textContent =

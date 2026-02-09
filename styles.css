@@ -308,8 +308,47 @@ main {
   overflow: hidden;
 }
 
-.thanks {
+.contact-cta {
+  background: rgba(23, 31, 42, 0.7);
+  border-radius: 18px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.thanks-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 12, 18, 0.72);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+  padding: 24px;
+}
+
+body[data-thanks="true"] .thanks-overlay {
+  display: flex;
+}
+
+.thanks-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 28px 32px;
+  max-width: 520px;
   text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.thanks-note {
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .footer {

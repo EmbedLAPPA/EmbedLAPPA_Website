@@ -24,9 +24,9 @@
         <a href="#services">Services</a>
         <a href="#work">Work</a>
         <a href="#stack">Stack</a>
-        <a href="#contact">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <a class="cta" href="#contact">Start a Project</a>
+      <a class="cta" href="contact.html">Start a Project</a>
     </header>
 
     <main>
@@ -40,7 +40,7 @@
             to production with confidence.
           </p>
           <div class="hero-actions">
-            <a class="primary" href="#contact">Book a consult</a>
+            <a class="primary" href="contact.html">Book a consult</a>
             <a class="ghost" href="#work">See highlights</a>
           </div>
           <div class="meta">
@@ -64,7 +64,7 @@
               <li>RTOS task orchestration</li>
               <li>Diagnostics & telemetry</li>
             </ul>
-            <a class="card-link" href="#contact">Get a briefing →</a>
+            <a class="card-link" href="contact.html">Get a briefing →</a>
           </div>
         </div>
       </section>
@@ -128,65 +128,12 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact">
-        <div class="section-title">
-          <h2>Let’s build your next embedded release</h2>
-          <p>Tell us about your timeline and constraints. We reply within 48 hours.</p>
+      <section class="section contact-cta">
+        <div>
+          <h2>Ready to start?</h2>
+          <p>Tell us about your roadmap and we will reply within 48 hours.</p>
         </div>
-        <form
-          id="contact-form"
-          class="contact-form"
-          action="https://formspree.io/f/xojnvwlr"
-          method="POST"
-        >
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required />
-          </label>
-          <label>
-            Email
-            <input
-              type="email"
-              name="email"
-              placeholder="you@company.com"
-              required
-            />
-          </label>
-          <label>
-            Project notes
-            <textarea
-              name="message"
-              rows="4"
-              placeholder="What are you building?"
-              required
-            ></textarea>
-          </label>
-          <label class="honeypot" aria-hidden="true">
-            Leave this empty
-            <input
-              type="text"
-              name="_gotcha"
-              tabindex="-1"
-              autocomplete="off"
-            />
-          </label>
-          <input
-            type="hidden"
-            name="_subject"
-            value="EmbedLAPPA inquiry"
-          />
-          <button type="submit">Send inquiry</button>
-          <p class="form-note" id="form-note">
-            This form sends to Formspree. You will stay on this page.
-          </p>
-        </form>
-      </section>
-
-      <section id="thanks" class="section thanks">
-        <div class="section-title">
-          <h2>Thanks for reaching out</h2>
-          <p>We received your inquiry and will reply within 48 hours.</p>
-        </div>
+        <a class="primary" href="contact.html">Start a project</a>
       </section>
     </main>
 
