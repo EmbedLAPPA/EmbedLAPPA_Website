@@ -19,11 +19,14 @@
   <body>
     <div class="bg"></div>
     <header class="nav">
-      <div class="logo">EmbedLAPPA</div>
+      <a class="logo" href="index.html">EmbedLAPPA</a>
       <nav class="nav-links">
         <a href="#services">Services</a>
         <a href="#work">Work</a>
         <a href="#stack">Stack</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="capabilities.html">Capabilities</a>
         <a href="contact.html">Contact</a>
       </nav>
       <a class="cta" href="contact.html">Start a Project</a>
@@ -126,6 +129,144 @@
           <span>C · C++ · Rust</span>
           <span>Logic analyzers · JTAG · CI automation</span>
         </div>
+      </section>
+
+      <section id="process" class="section">
+        <div class="section-title">
+          <h2>Process, built for hardware teams</h2>
+          <p>Clear milestones with artifacts you can ship and audit.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Discovery & scope</h3>
+            <p>Requirements, risk review, and system architecture outline.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Bring-up & firmware</h3>
+            <p>Board validation, HAL strategy, and performance profiling.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Validation & QA</h3>
+            <p>Automated tests, telemetry hooks, and failure mode analysis.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Production readiness</h3>
+            <p>Manufacturing diagnostics, secure boot, and OTA rollout plan.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="case-studies" class="section">
+        <div class="section-title">
+          <h2>Case studies</h2>
+          <p>Recent engagements, condensed into outcomes.</p>
+        </div>
+        <div class="cards">
+          <article class="case-card">
+            <h3>Industrial control retrofit</h3>
+            <p>Cut boot time by 42% and standardized diagnostics across 3 SKUs.</p>
+            <span class="pill">STM32 · FreeRTOS</span>
+          </article>
+          <article class="case-card">
+            <h3>Edge sensor gateway</h3>
+            <p>Delivered a low-power BLE/Wi-Fi gateway with remote updates.</p>
+            <span class="pill">ESP32 · OTA</span>
+          </article>
+          <article class="case-card">
+            <h3>Custom board bring-up</h3>
+            <p>Validated power, IO, and boot sequencing in two weeks.</p>
+            <span class="pill">Bare-metal · JTAG</span>
+          </article>
+        </div>
+        <a class="ghost" href="case-studies.html">View all case studies</a>
+      </section>
+
+      <section id="testimonials" class="section dark">
+        <div class="section-title">
+          <h2>Teams that trust EmbedLAPPA</h2>
+          <p>Selected partners and feedback from embedded product teams.</p>
+        </div>
+        <div class="logo-grid">
+          <span>Precision Robotics</span>
+          <span>FieldEdge Labs</span>
+          <span>Atlas Controls</span>
+          <span>NordicWorks</span>
+        </div>
+        <div class="cards">
+          <article class="testimonial">
+            <p>
+              “They turned our bring-up checklist into a repeatable, CI-ready
+              flow.”
+            </p>
+            <span>Hardware Lead, Industrial Automation</span>
+          </article>
+          <article class="testimonial">
+            <p>
+              “Firmware profiling and OTA planning saved us weeks before pilot.”
+            </p>
+            <span>CTO, IoT Platform</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="section-title">
+          <h2>FAQ</h2>
+          <p>Common questions about scope, timing, and engagement.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How fast can we start?</summary>
+            <p>Discovery calls usually begin within 1-2 weeks.</p>
+          </details>
+          <details>
+            <summary>Do you sign NDAs?</summary>
+            <p>Yes, NDAs are standard before reviewing sensitive designs.</p>
+          </details>
+          <details>
+            <summary>What does a typical engagement include?</summary>
+            <p>Architecture review, bring-up plan, and validation checklist.</p>
+          </details>
+          <details>
+            <summary>Can you work with in-house teams?</summary>
+            <p>Yes, we embed alongside your engineers and tools.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="capabilities" class="section">
+        <div class="section-title">
+          <h2>Capabilities one-pager</h2>
+          <p>A concise view of services, tooling, and engagement model.</p>
+        </div>
+        <div class="capabilities">
+          <p>
+            Download or share the one-pager with stakeholders and procurement.
+          </p>
+          <a class="primary" href="capabilities.html">Open one-pager</a>
+        </div>
+      </section>
+
+      <section id="insights" class="section">
+        <div class="section-title">
+          <h2>Insights</h2>
+          <p>Field notes, playbooks, and embedded systems checklists.</p>
+        </div>
+        <div class="cards">
+          <article class="insight-card">
+            <h3>Bring-up checklist for new boards</h3>
+            <p>From power rails to first firmware boot, avoid blind spots.</p>
+          </article>
+          <article class="insight-card">
+            <h3>Planning OTA updates</h3>
+            <p>What to decide before writing the first update script.</p>
+          </article>
+          <article class="insight-card">
+            <h3>RTOS scheduling pitfalls</h3>
+            <p>How to structure tasks to keep timing deterministic.</p>
+          </article>
+        </div>
+        <a class="ghost" href="insights.html">Read more insights</a>
       </section>
 
       <section class="section contact-cta">

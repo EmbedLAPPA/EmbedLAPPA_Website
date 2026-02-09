@@ -19,11 +19,14 @@
   <body>
     <div class="bg"></div>
     <header class="nav">
-      <div class="logo">EmbedLAPPA</div>
+      <a class="logo" href="index.html">EmbedLAPPA</a>
       <nav class="nav-links">
         <a href="index.html#services">Services</a>
         <a href="index.html#work">Work</a>
         <a href="index.html#stack">Stack</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="capabilities.html">Capabilities</a>
         <a href="contact.html">Contact</a>
       </nav>
       <a class="cta" href="contact.html">Start a Project</a>
@@ -45,7 +48,9 @@
           action="https://formspree.io/f/xojnvwlr"
           method="POST"
           data-redirect="https://embedlappa.github.io/EmbedLAPPA_Website/"
+          novalidate
         >
+          <div class="form-errors" id="form-errors" role="alert" aria-live="polite"></div>
           <label>
             Inquiry type <span class="required-marker" aria-hidden="true">*</span>
             <select name="inquiry_type" required>

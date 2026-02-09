@@ -202,6 +202,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  scroll-margin-top: 120px;
 }
 
 .section-title h2 {
@@ -239,6 +240,112 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.page-hero {
+  padding-top: 10px;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.timeline-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.pill {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 12px;
+}
+
+.case-card,
+.insight-card,
+.capability-card,
+.testimonial {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.case-card ul,
+.capability-card ul {
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.logo-grid span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 16px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.testimonial p {
+  margin: 0 0 12px;
+}
+
+.testimonial span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.faq {
+  display: grid;
+  gap: 12px;
+}
+
+.faq details {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: var(--card);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq p {
+  color: var(--muted);
+  margin: 10px 0 0;
+}
+
+.capabilities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 24px;
+  background: var(--card);
 }
 
 .stack {
@@ -305,6 +412,31 @@ main {
   gap: 8px;
   font-size: 0.9rem;
   color: var(--muted);
+}
+
+.form-errors {
+  display: none;
+  border: 1px solid rgba(242, 107, 81, 0.6);
+  background: rgba(242, 107, 81, 0.12);
+  color: #ffd2c7;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+.form-errors:not(:empty) {
+  display: block;
+}
+
+.contact-form label.has-error {
+  color: #ffd2c7;
+}
+
+.contact-form input.has-error,
+.contact-form textarea.has-error,
+.contact-form select.has-error {
+  border-color: rgba(242, 107, 81, 0.9);
+  box-shadow: 0 0 0 1px rgba(242, 107, 81, 0.35);
 }
 
 .required-marker {

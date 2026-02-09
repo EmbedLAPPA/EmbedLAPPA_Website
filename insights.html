@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EmbedLAPPA — Insights</title>
+    <meta
+      name="description"
+      content="Embedded systems insights, playbooks, and field notes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header class="nav">
+      <a class="logo" href="index.html">EmbedLAPPA</a>
+      <nav class="nav-links">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#stack">Stack</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="capabilities.html">Capabilities</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cta" href="contact.html">Start a Project</a>
+    </header>
+
+    <main>
+      <section class="section page-hero">
+        <div class="section-title">
+          <h2>Insights</h2>
+          <p>Field notes, firmware checklists, and architecture playbooks.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="cards">
+          <article class="insight-card">
+            <h3>Bring-up checklist for new boards</h3>
+            <p>
+              A practical sequence for validating power, clocks, and IO before
+              firmware work begins.
+            </p>
+            <span class="pill">Bring-up</span>
+          </article>
+          <article class="insight-card">
+            <h3>Planning OTA updates</h3>
+            <p>
+              Decide on rollback policies, telemetry, and versioning early to
+              avoid field surprises.
+            </p>
+            <span class="pill">OTA</span>
+          </article>
+          <article class="insight-card">
+            <h3>RTOS scheduling pitfalls</h3>
+            <p>
+              Avoid priority inversion and timing drift with task audits and
+              deterministic queues.
+            </p>
+            <span class="pill">RTOS</span>
+          </article>
+          <article class="insight-card">
+            <h3>Diagnostics that scale</h3>
+            <p>
+              Build log pipelines and error codes that work from lab bench to
+              production.
+            </p>
+            <span class="pill">Diagnostics</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-cta">
+        <div>
+          <h2>Need a deeper dive?</h2>
+          <p>We can tailor a workshop to your specific hardware stack.</p>
+        </div>
+        <a class="primary" href="contact.html">Book a consult</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>EmbedLAPPA</strong> · Embedded systems development
+      </div>
+      <div>
+        <span id="year"></span> · Placeholder domain
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
