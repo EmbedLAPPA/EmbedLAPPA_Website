@@ -4,6 +4,9 @@ if (year) {
 }
 
 const revealTargets = document.querySelectorAll(".section, .hero, .footer");
+const navToggle = document.querySelector(".nav-toggle");
+const navBar = document.querySelector(".nav");
+const navLinks = document.querySelector(".nav-links");
 
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
@@ -20,6 +23,22 @@ if ("IntersectionObserver" in window) {
   revealTargets.forEach((target) => observer.observe(target));
 } else {
   revealTargets.forEach((target) => target.classList.add("is-visible"));
+}
+
+if (navToggle && navBar) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navBar.classList.toggle("nav--open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
+if (navLinks && navBar && navToggle) {
+  navLinks.addEventListener("click", (event) => {
+    if (event.target instanceof HTMLAnchorElement) {
+      navBar.classList.remove("nav--open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
 }
 
 const contactForm = document.getElementById("contact-form");
