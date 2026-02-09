@@ -265,6 +265,16 @@ main {
   gap: 16px;
 }
 
+.contact-form--stacked {
+  grid-template-columns: 1fr;
+}
+
+.form-legend {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .contact-form label {
   display: flex;
   flex-direction: column;
@@ -273,14 +283,25 @@ main {
   color: var(--muted);
 }
 
+.required-marker {
+  color: var(--accent-2);
+  margin-left: 4px;
+}
+
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   background: #0e141d;
   border: 1px solid var(--line);
   color: var(--text);
   border-radius: 10px;
   padding: 10px 12px;
   font-family: "Space Grotesk", sans-serif;
+}
+
+.contact-form textarea {
+  min-height: 160px;
+  resize: vertical;
 }
 
 .contact-form button {
