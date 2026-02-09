@@ -4,18 +4,23 @@ if (year) {
 }
 
 const revealTargets = document.querySelectorAll(".section, .hero, .footer");
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
 
-revealTargets.forEach((target) => observer.observe(target));
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  revealTargets.forEach((target) => observer.observe(target));
+} else {
+  revealTargets.forEach((target) => target.classList.add("is-visible"));
+}
 
 const contactForm = document.getElementById("contact-form");
 const formNote = document.getElementById("form-note");
@@ -23,6 +28,7 @@ const formNote = document.getElementById("form-note");
 if (contactForm) {
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+    event.stopPropagation();
 
     if (formNote) {
       formNote.textContent = "Sending your inquiry...";
