@@ -85,10 +85,28 @@ body {
   background: transparent;
   border: 1px solid var(--line);
   color: var(--text);
-  padding: 8px 14px;
+  padding: 8px;
   border-radius: 999px;
   font-weight: 600;
   cursor: pointer;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 44px;
+  height: 40px;
+}
+
+.nav-toggle-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 999px;
+}
+
+.nav-cta {
+  display: none;
 }
 
 .cta {
@@ -566,6 +584,16 @@ body[data-thanks="true"] .thanks-overlay {
     align-items: flex-start;
     gap: 12px;
     display: none;
+    padding-bottom: 8px;
+  }
+
+  .nav > .cta {
+    display: none;
+  }
+
+  .nav-links .nav-cta {
+    display: inline-flex;
+    margin-top: 6px;
   }
 
   .nav.nav--open .nav-links {
