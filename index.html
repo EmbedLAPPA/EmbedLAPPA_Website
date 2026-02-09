@@ -134,6 +134,7 @@
           <p>Tell us about your timeline and constraints. We reply within 48 hours.</p>
         </div>
         <form
+          id="contact-form"
           class="contact-form"
           action="https://formspree.io/f/xojnvwlr"
           method="POST"
@@ -171,18 +172,12 @@
           </label>
           <input
             type="hidden"
-            name="_next"
-            value="https://embedlappa.github.io/EmbedLAPPA_Website/#thanks"
-          />
-          <input
-            type="hidden"
             name="_subject"
             value="EmbedLAPPA inquiry"
           />
           <button type="submit">Send inquiry</button>
-          <p class="form-note">
-            This form sends to Formspree. Replace the action URL with your
-            Formspree form ID.
+          <p class="form-note" id="form-note">
+            This form sends to Formspree. You will stay on this page.
           </p>
         </form>
       </section>
