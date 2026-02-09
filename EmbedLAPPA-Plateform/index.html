@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EmbedLAPPA — Embedded Systems Development</title>
+    <meta
+      name="description"
+      content="EmbedLAPPA builds reliable embedded systems, from bare-metal firmware to production-ready hardware bring-up."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header class="nav">
+      <div class="logo">EmbedLAPPA</div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta" href="#contact">Start a Project</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Embedded Systems Development Organization</p>
+          <h1>Ship hardware with firmware that is fast, safe, and field-ready.</h1>
+          <p class="lead">
+            EmbedLAPPA partners with teams to design, debug, and productize embedded
+            systems—microcontrollers, RTOS, and edge IoT—so you can move from prototype
+            to production with confidence.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#contact">Book a consult</a>
+            <a class="ghost" href="#work">See highlights</a>
+          </div>
+          <div class="meta">
+            <span>Based on GitHub · Open collaboration</span>
+            <span>Free domain placeholder</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-top">
+            <span class="badge">Latest build</span>
+            <span class="status">All checks green</span>
+          </div>
+          <div class="card-body">
+            <h2>EmbedLAPPA Lab Notes</h2>
+            <p>
+              Architecture reviews, validation plans, and firmware bring-up
+              checklists for embedded teams.
+            </p>
+            <ul>
+              <li>Board bring-up + boot sequencing</li>
+              <li>RTOS task orchestration</li>
+              <li>Diagnostics & telemetry</li>
+            </ul>
+            <a class="card-link" href="#contact">Get a briefing →</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="section-title">
+          <h2>Services that move hardware forward</h2>
+          <p>Engagements tailored to your roadmap, not generic sprints.</p>
+        </div>
+        <div class="grid">
+          <article class="tile">
+            <h3>Firmware Architecture</h3>
+            <p>System design, HAL strategy, and performance profiling for MCUs.</p>
+          </article>
+          <article class="tile">
+            <h3>Bring-up & Validation</h3>
+            <p>Structured hardware validation, test fixtures, and CI-ready checks.</p>
+          </article>
+          <article class="tile">
+            <h3>RTOS & Connectivity</h3>
+            <p>FreeRTOS, Zephyr, BLE/Wi-Fi integration, and low-power tuning.</p>
+          </article>
+          <article class="tile">
+            <h3>Production Readiness</h3>
+            <p>Manufacturing diagnostics, secure boot, and field update flows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section dark">
+        <div class="section-title">
+          <h2>Selected focus areas</h2>
+          <p>We keep projects lean, measurable, and traceable.</p>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <h3>Industrial controls</h3>
+            <p>Robust sensor pipelines, deterministic IO, and failsafe handling.</p>
+          </div>
+          <div class="column">
+            <h3>Edge diagnostics</h3>
+            <p>On-device logging, fleet telemetry, and error recovery patterns.</p>
+          </div>
+          <div class="column">
+            <h3>Custom boards</h3>
+            <p>Bring-up playbooks for STM32, ESP32, and custom SoCs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack" class="section">
+        <div class="section-title">
+          <h2>Tooling & stack</h2>
+          <p>We collaborate in GitHub-centric workflows and modern toolchains.</p>
+        </div>
+        <div class="stack">
+          <span>STM32 · ESP32 · Nordic</span>
+          <span>FreeRTOS · Zephyr · Bare-metal</span>
+          <span>C · C++ · Rust</span>
+          <span>Logic analyzers · JTAG · CI automation</span>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-title">
+          <h2>Let’s build your next embedded release</h2>
+          <p>Tell us about your timeline and constraints. We reply within 48 hours.</p>
+        </div>
+        <form class="contact-form" onsubmit="return false;">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@company.com" />
+          </label>
+          <label>
+            Project notes
+            <textarea rows="4" placeholder="What are you building?"></textarea>
+          </label>
+          <button type="button">Send inquiry</button>
+          <p class="form-note">
+            Placeholder form. Add your email handler or CRM integration.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>EmbedLAPPA</strong> · Embedded systems development
+      </div>
+      <div>
+        <span id="year"></span> · Placeholder domain
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
