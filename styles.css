@@ -277,8 +277,15 @@ main {
 }
 
 .contact-form--stacked {
+  display: flex !important;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact .contact-form {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .contact-form--stacked label,
